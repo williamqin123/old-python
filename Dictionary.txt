@@ -1,0 +1,10 @@
+BatteryLife = [0.18, 0.1]
+BatteryPower = 55
+'''
+self.DictionaryLine = {
+"print()" : "A Built-in function used to show text on the screen.",
+"len()" : "A built-in function to determine the length of a string.",
+"raise" : "To cause an ecxeption.",
+"sys.exit()" : "To quit the program with the sys module.",
+}
+'''

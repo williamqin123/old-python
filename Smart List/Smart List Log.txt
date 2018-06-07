@@ -1,0 +1,15 @@
+(dp0
+S'Elapsed Time in Seconds'
+p1
+F101.91670203208923
+sS'Startup Time in Seconds'
+p2
+F0.016768932342529297
+sS'Current List Type'
+p3
+S'Numbered List'
+p4
+sS'Items in List on Exit'
+p5
+I4
+s.

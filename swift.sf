@@ -1,0 +1,46 @@
+class Bird {
+	init(type: String) {
+		var count = 1
+		var birdlist = ["red", "yellow", "green", "white", "terrence", "bomb", "special pack"]
+		for eachbird in birdlist {
+			count += 1
+			if eachbird == type {
+				self.strength = count
+				println("  _(\/)_")
+				println(" /   O_O\")
+				println("|      [>|")
+				println("\________/ READY")
+			}
+		}
+	}
+}
+class Pig {
+	init(type: String, size: Int) {
+		self.type = type
+		self.size = size
+		self.foodlevel = 75
+		println("  O_____O")
+		println(" / O___O \")
+		println("|  (o_o)  |")
+		println("| \_____/ |")
+		println(" \_______/ HAPPY")
+	}
+	func eat() {
+		println("\(self.type) ate a hamburger in \(10 - self.size) bite(s).")
+		self.foodlevel = self.foodlevel + 25
+		println(" ()_____()")
+		println(" / o___o \")
+		println("|  (O_O)  |")
+		println("| (---\   |")
+		println(" \_______/ CHEWING")
+		println("Now your \(self.type) is \(self.foodlevel) food levels full. If he is full, he might get hungry during the day.")
+	}
+	func joingame(bird: String) {
+		println("Your \(self.type) joined an Angry Birds game...")
+		println("Birds scored \(bird.strength). Pigs scored \(self.size).")
+		self.foodlevel = self.foodlevel - 12
+	}
+}
+var king = Pig("king pig", 5)
+var birdy = Bird("bomb")
+king.joingame(birdy)
